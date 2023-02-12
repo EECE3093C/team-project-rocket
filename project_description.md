@@ -12,7 +12,7 @@ Our approach will be the most efficient iteration of a card collection software.
 
 
 # **Software Architecture**
-At very high level we will be using the external Magic the gathering API to populate information. We will also use the MySQL database to track the users playing cards. 
+At a very high level we will be using the external Magic:The gathering API to populate information. We will also use the MySQL database to track the user's playing cards. 
 
 
 # **Challenges and Risks**
