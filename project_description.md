@@ -13,6 +13,10 @@ This product is for the following two users:
   
 This software significantly simplifies the process of tracking and organizing a collection. There currently is not an easy to use, efficient method of keeping a digital collection. Players currently use either Microsoft Excel or less optimal solutions like MTGGoldfish's collection feature. Our software will fulfill players' needs for a better card collection software.
 
+Our approach will be the most efficient iteration of a card collection software. Firstly, ease of use will be a top priority, so that users can record their collections as quickly and simply as possible. They will also be able to filter and search through their own collection with precise options. Secondly, users will be able to compare collections with each other and even set up in-person trades. This will be extremely unique to our software.
+
+
+
 # **Software Architecture**
 
 
