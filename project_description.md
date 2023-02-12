@@ -12,7 +12,10 @@ Our approach will be the most efficient iteration of a card collection software.
 
 
 # **Software Architecture**
-
+At very high level we will be using the external Magic the gathering API to populate information. We will also use the MySQL database to track the users playing cards. 
 
 
 # **Challenges and Risks**
+
+The single most serious challenge we anticipate is users maliciously flooding the database. If we were to give a new user a collection they can freely add cards to, we run into problems when they add 5,000,000 Storm Crows to their collection and crash our server because the database can't store that. Furthermore, a person could run multiple users in an attempt to do this.
+We will attempt to minimize this risk by setting a soft limit on the amount of cards any new user can add to their collection, at around 500 cards. So long as a user doesn't create large influxes of cards to the database, isn't spamming additions of the same card repeatedly, or otherwise indicating poor behavior deserving of restrictions, they will be free to add cards as they please. If they approach the limit and are in good standing, the limit will be raised for them. This way we will be able to mitigate poor user behavior and malicious acts towards our database, while sustaining genuine players and collectors.
