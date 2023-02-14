@@ -14,8 +14,11 @@ Our approach will be the most efficient iteration of a card collection software.
 
 This project will be accomplished using Python at its core. The Qt library for Python will be used to create a functional, straightforward, and user-centric GUI. The official Magic: The Gathering API will be utilized to populate missing information about a user's cards. A MySQL database located on a remote server will be used to store information about each user's card collection.
 
+The majority of data we will be accessing is card information, such as name, set, art, spell type, price, and more. However, the main data we will be storing is individual card identifiers, either the `multiverseid` variable or the `id` variable.
+
 
 # **Challenges and Risks**
 
 The single most serious challenge we anticipate is users maliciously flooding the database. If we were to give a new user a collection they can freely add cards to, we run into problems when they add 5,000,000 Storm Crows to their collection and crash our server because the database can't store that. Furthermore, a person could run multiple users in an attempt to do this.
+
 We will attempt to minimize this risk by setting a soft limit on the amount of cards any new user can add to their collection, at around 500 cards. So long as a user doesn't create large influxes of cards to the database, isn't spamming additions of the same card repeatedly, or otherwise indicating poor behavior deserving of restrictions, they will be free to add cards as they please. If they approach the limit and are in good standing, the limit will be raised for them. This way we will be able to mitigate poor user behavior and malicious acts towards our database, while sustaining genuine players and collectors.
