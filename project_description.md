@@ -16,6 +16,7 @@ Our approach will be the most user-friendly option available. Firstly, ease of u
 This project will be accomplished using Python at its core. The Qt library for Python will be used to create a functional, straightforward, and user-centric GUI. The official Magic: The Gathering API will be utilized to populate missing information about a user's cards. A MySQL database located on a remote server will be used to store information about each user's card collection.
 
 The majority of data we will be accessing is card information, such as name, set, art, spell type, price, and more. The multiverseid variable or the id variable, which are unique card identifiers, will be the primary key for the  data we store. The project will be utilizing the client-server model where the server will be resposible for handling user and card data, while the client will be primarily used for user facing experiences. 
+<img src="https://github.com/EECE3093C/team-project-rocket/blob/main/SoftwareEngineeringProject.drawio.png">
 
 # **Challenges and Risks**
 
