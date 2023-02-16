@@ -20,6 +20,7 @@ The majority of data we will be accessing is card information, such as name, set
 # **Challenges and Risks**
 
 The single most challenging aspect of this project is the unfamiliarity some of us have with the game Difficult to code Magic: The Gathering  software having never played the game.
+
 Solution: learn about the game first and foremost. Teach each other, maybe play a few rounds.
 
 
